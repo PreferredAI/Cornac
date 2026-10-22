@@ -25,6 +25,12 @@ from .next_basket_evaluation import NextBasketEvaluation
 from .next_item_evaluation import NextItemEvaluation
 from .propensity_stratified_evaluation import PropensityStratifiedEvaluation
 
+from .semantic_id_evaluation import (
+    SemanticIDEvaluation,
+    collect_semantic_id_trace,
+    evaluate_semantic_id_trace,
+)
+
 __all__ = [
     "BaseMethod",
     "RatioSplit",
@@ -34,4 +40,7 @@ __all__ = [
     "NextBasketEvaluation",
     "NextItemEvaluation",
     "PropensityStratifiedEvaluation",
+    "SemanticIDEvaluation",
+    "collect_semantic_id_trace",
+    "evaluate_semantic_id_trace",
 ]
